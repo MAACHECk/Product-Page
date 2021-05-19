@@ -1,73 +1,79 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
-body {
-    background-color: rgb(255, 255, 255);
-}
-
-.flex {
-    /* background-color: cornsilk; */
+#header {
     display: flex;
-    height: auto;
     flex-direction: row;
-    align-items: top;
     justify-content: flex-start;
-}
-
-.logo {
-    display: flex;
-    width: 40px;
+    align-items: center;
     height: 50px;
+    margin: 0px 0px 0px 20px;
+}
+
+#header-img {
+    width: 75px;
+    height: auto;
+}
+
+#header-name {
+    font-family: Lato, sans-serif;
+    font-size: 30px;
     align-items: center;
-    justify-content: center;
-    /* background-color: greenyellow; */
+    margin-left: 20px;
+    color: rgb(200, 88, 51);
+}
+
+#nav-bar {
     flex-grow: 1;
-}
-
-#image {
-    display: flex;
-    width: 100%;
-}
-
-.logo-name {
-    display: flex;
-    /* background-color: rgb(255, 123, 105); */
-    width: auto;
-    height: 50px;
-    margin-left: 10px;
-    align-items: center;
-    flex-grow: 1;
-}
-
-h3 {
-    display: flex;
-    /* background-color: rgb(105, 255, 125); */
-    width: auto;
-    height: 50px;
-    align-items: center;
-    flex-grow: 1;
-    font-family: lato;
-}
-
-.header-links {
-    display: flex;
-    align-items: center;
-    /* background-color: lavender; */
-    flex-grow: 40;
     justify-content: flex-end;
+    height: 50px;
 }
 
-.header-links a {
+.nav-link {
     display: flex;
-    width: 10%;
-    /* background-color: lightcoral; */
+    flex-direction: row;
     justify-content: space-evenly;
-    font-family: lato;
-}
+    margin-left: 500px;
+    height: 50px;
+    margin-top: 0;
+    align-items: center;
+    }
 
-a, a:hover {
+ul, a, a:hover {
+    list-style-type: none;
     text-decoration: none;
-    color: black;
-
+    color: rgb(116, 150, 161);
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
 }
 
+#welcome {
+    display: flex;
+    background-image: url(images/bread-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
 
+#welcome-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 200px 200px 200px;
+    height: 500px;
+    justify-items: center;
+    width: 1000px;
+}
+
+h2 {
+    font-size: 72px;
+    font-family: Lato, sans-serif;
+    margin: 100px 0px 0px 0px;
+    text-align: right;
+}
+
+#welcome-info p {
+    font-size: 20px;
+    font-style: italic;
+    text-align: right;
+    margin-top: 0;
+}
