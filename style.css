@@ -26,6 +26,10 @@ h2 {
     color: black;
 }
 
+h3 {
+    font-family: "Montserrat", sans-serif;  
+}
+
 p {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
@@ -38,10 +42,12 @@ html, body {
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: 50px 750px auto auto 50px;
     grid-template-areas: 
             "h"
             "c"
+            "n"
+            "o"
             "f";
 }
 
@@ -101,6 +107,56 @@ body {
 .content-header p {
     align-self: flex-start;
     margin-left: 7px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    grid-area: n;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.newsletter h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.newsletter input {
+    width: 300px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.newsletter button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #337AB7;
+    background: transparent;
+    color: #337AB7;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    font-family: montserrat, sans-serif;
+}
+
+.craft {
+    grid-area: o;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 100px;
+    margin-left: 400px;
+}
+
+.craft h3 {
+    font-size: 32px;
+    color: #c34A37
+}
+
+.craft p {
+    font-size: 12px;
 }
 
 .footer {
