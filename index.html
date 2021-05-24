@@ -5,15 +5,15 @@
             <link rel="stylesheet" href="style.css">
         </head>
         <body>
-            <header class="header">
-                <img class="header-img" src="images/bread.png" alt="logo">
+            <header id="header" class="header">
+                <img id="header-img" class="header-img" src="images/bread.png" alt="logo">
                 <h1 id="header-name">Red Panda Bakery</h1>
-                <nav>
+                <nav id="nav-bar">
                     <ul class="header-links">
-                        <li><a href="#craft">Our Craft</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#newsletter">News</a></li>
-                        <li><a href="#">Find Us</a></li>
+                        <li><a class="nav-link" href="#craft">Our Craft</a></li>
+                        <li><a class="nav-link" href="#menu">Menu</a></li>
+                        <li><a class="nav-link" href="#newsletter">News</a></li>
+                        <li><a class="nav-link" href="#">Find Us</a></li>
                     </ul>
                 </nav>
             </header>
@@ -25,8 +25,10 @@
             </div>
             <div id="newsletter" class="newsletter">
                 <h2>Get exclusive news and recipes</h2>
-                <input type="text" placeholder="Enter your Email">
-                <button type="submit">Submit</button>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input id="email" type="email" placeholder="Enter your Email">
+                <button id="submit" type="submit">Submit</button>
+                </form>
             </div>
             <div id="craft" class="craft">
                 <h2 class="craft-title">Our Craft</h2>
