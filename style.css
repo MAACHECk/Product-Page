@@ -42,12 +42,14 @@ html, body {
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 750px auto auto 50px;
+    grid-template-rows: 50px 750px auto auto auto auto 50px;
     grid-template-areas: 
             "h"
             "c"
-            "n"
             "o"
+            "v"
+            "m"
+            "n"
             "f";
 }
 
@@ -57,6 +59,10 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
 
 
@@ -144,16 +150,29 @@ body {
     grid-area: o;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
-    height: 250px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+            "Q Q"
+            "X Z";
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.craft-title {
+    grid-area: Q;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .craft-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: -75px;
+    grid-area: Z;
 }
 
 .craft-icons {
@@ -161,7 +180,8 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    margin-right: 50px;
+    margin-right: 125px;
+    grid-area: X;
 }
 
 .craft-icons .craft-img {
@@ -178,9 +198,137 @@ body {
     font-size: 12px;
 }
 
-.craft img {
+.video {
+    grid-area: v;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.menu {
+    grid-area: m;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    justify-items: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu h2 {
+    grid-column: 1 / 4 ;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 50px
+}
+
+.countrybread {
+    border: #337AB7 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    
+}
+
+.countrybread h3 {
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.countrybread li {
+    text-align: justify;
+    width: 200px;
+    font-size: 14px;
+    color: black;
+    margin-left: 20px;
+}
+
+.countrybread button {
+    margin-top: auto;
+    margin-bottom: 20px;
+    border: 2px solid #337AB7;
+    background: transparent;
+    color: #337AB7;
+    height: 30px;
     width: 100px;
-    height: auto;
+    cursor: pointer;
+    font-family: montserrat, sans-serif;
+}
+
+.porridge {
+    border: #337AB7 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.porridge h3 {
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.porridge li {
+    text-align: justify;
+    width: 200px;
+    font-size: 14px;
+    color: black;
+    margin-left: 20px;
+}
+
+.porridge button {
+    margin-top: auto;
+    margin-bottom: 20px;
+    border: 2px solid #337AB7;
+    background: transparent;
+    color: #337AB7;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    font-family: montserrat, sans-serif;
+}
+
+.rye {
+    border: #337AB7 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 250px;
+}
+
+.rye h3 {
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.rye li {
+    text-align: justify;
+    width: 200px;
+    font-size: 14px;
+    color: black;
+    margin-left: 20px;
+}
+
+.rye button {
+    margin-top: auto;
+    margin-bottom: 20px;
+    border: 2px solid #337AB7;
+    background: transparent;
+    color: #337AB7;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    font-family: montserrat, sans-serif;
 }
 
 .footer {
