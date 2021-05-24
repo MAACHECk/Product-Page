@@ -42,7 +42,7 @@ html, body {
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 750px auto auto auto auto 50px;
+    grid-template-rows: 50px 750px auto auto 750px 200px 50px;
     grid-template-areas: 
             "h"
             "c"
@@ -120,7 +120,7 @@ body {
     flex-direction: column;
     grid-area: n;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .newsletter h2 {
@@ -156,7 +156,6 @@ body {
             "X Z";
     height: 350px;
     margin-top: 50px;
-    margin-bottom: 20px;
     padding-top: 50px;
 }
 
@@ -202,7 +201,7 @@ body {
     grid-area: v;
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 
 .menu {
@@ -211,7 +210,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr;
     justify-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -223,7 +222,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 20px;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .countrybread {
@@ -333,4 +332,8 @@ body {
 
 .footer {
     grid-area: f;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
